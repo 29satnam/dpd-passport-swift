@@ -29,7 +29,6 @@ class SignupViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    
     @IBAction func signupTapped(sender : UIButton) {
         let username:NSString = txtUsername.text!
         let password:NSString = txtPassword.text!
@@ -78,10 +77,7 @@ class SignupViewController: UIViewController {
                                 self.presentViewController(alertController, animated: true) { }
                             })
                         }
-                        
-                        
                     } else {
-                        
                         dispatch_async(dispatch_get_main_queue(), {
                             
                             let alertController = UIAlertController(title: "Sign up Failed!", message: "Username already exist", preferredStyle: .Alert)
@@ -89,9 +85,7 @@ class SignupViewController: UIViewController {
                             alertController.addAction(OKAction)
                             self.presentViewController(alertController, animated: true) { }
                         })
-                        
                     }
-                    
                 } else {
                  
                     dispatch_async(dispatch_get_main_queue(), {
@@ -100,7 +94,6 @@ class SignupViewController: UIViewController {
                         alertController.addAction(OKAction)
                         self.presentViewController(alertController, animated: true) { }
                     })
-                    
                 }
                 
             })

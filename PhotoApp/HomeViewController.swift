@@ -33,6 +33,7 @@ class HomeViewController: UIViewController {
             
             let token = prefs.valueForKey("SESSIONID") as? String
             
+            let session = NSURLSession.sharedSession()
             
             let url = NSURL(string: "http://my.vigasdeep.com:2403/users/me")
             
@@ -40,14 +41,23 @@ class HomeViewController: UIViewController {
             request.HTTPMethod = "GET"
             request.setValue( "Bearer \(token!)", forHTTPHeaderField: "Authorization")
             
-            NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.currentQueue()!) { response, maybeData, error in
-                if let data = maybeData {
-                    let contents = NSString(data:data, encoding:NSUTF8StringEncoding)
-                    print(contents!, "bitch")
-                } else {
-                    print(error!.localizedDescription)
+            
+            
+            let task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
+                if (data != nil) {
+                    let res = response as! NSHTTPURLResponse!;
+                    if 200..<300 ~= res.statusCode {
+                        do {
+                            let jsonData:NSDictionary = try NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.MutableContainers ) as! NSDictionary
+                            let username:String = jsonData.valueForKey("username") as! String
+                            print(username)
+                        } catch _ as NSError {
+                            
+                        }
+                    }
                 }
-            }
+            })
+            task.resume()
         }
     }
     
