@@ -9,7 +9,6 @@
 let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
 
 import UIKit
-import Alamofire
 
 class LoginViewController: UIViewController,UIWebViewDelegate {
     
