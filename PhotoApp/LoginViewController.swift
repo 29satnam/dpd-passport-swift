@@ -81,7 +81,7 @@ class LoginViewController: UIViewController,UIWebViewDelegate {
             
         } else {
             
-            let request = NSMutableURLRequest(URL: NSURL(string: "http://my.vigasdeep.com:2403/auth/login")!)
+            let request = NSMutableURLRequest(URL: NSURL(string: "http://xxxxxxxxxxxx.com:2403/auth/login")!)
             let session = NSURLSession.sharedSession()
             request.HTTPMethod = "POST"
             
@@ -167,24 +167,24 @@ class LoginViewController: UIViewController,UIWebViewDelegate {
     
     //Mark: Social Network Buttons
     @IBAction func twitterLogin(sender: UIButton) {
-        self.callbackString = "http://my.vigasdeep.com:2403/auth/twitter/callback"
+        self.callbackString = "http://xxxxxxxxxxxx.com:2403/auth/twitter/callback"
         self.navItem.title = "Twitter Login"
-        self.webView.loadRequest(NSURLRequest(URL: NSURL(string: "http://my.vigasdeep.com:2403/auth/twitter")!))
+        self.webView.loadRequest(NSURLRequest(URL: NSURL(string: "http://xxxxxxxxxxxx.com:2403/auth/twitter")!))
         attachWebView()
     }
     
     @IBAction func facebookLogin(sender: UIButton) {
-        self.callbackString = "http://my.vigasdeep.com:2403/auth/facebook/callback"
+        self.callbackString = "http://xxxxxxxxxxxx.com:2403/auth/facebook/callback"
         self.navItem.title = "Facebook Login"
-        self.webView.loadRequest(NSURLRequest(URL: NSURL(string: "http://my.vigasdeep.com:2403/auth/facebook")!))
+        self.webView.loadRequest(NSURLRequest(URL: NSURL(string: "http://xxxxxxxxxxxx.com:2403/auth/facebook")!))
         attachWebView()
     }
     
     
     @IBAction func googleLogin(sender: UIButton) {
-        self.callbackString = "http://my.vigasdeep.com:2403/auth/google/callback"
+        self.callbackString = "http://xxxxxxxxxxxx.com:2403/auth/google/callback"
         self.navItem.title = "Google Login"
-        self.webView.loadRequest(NSURLRequest(URL: NSURL(string: "http://my.vigasdeep.com:2403/auth/google")!))
+        self.webView.loadRequest(NSURLRequest(URL: NSURL(string: "http://xxxxxxxxxxxx.com:2403/auth/google")!))
         attachWebView()
     }
     
