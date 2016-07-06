@@ -393,7 +393,7 @@ class LoginViewController: UIViewController, UIWebViewDelegate, UITextFieldDeleg
             
         } else {
             
-            let request = NSMutableURLRequest(URL: NSURL(string: "http://my.vigasdeep.com:2403/auth/login")!)
+            let request = NSMutableURLRequest(URL: NSURL(string: "http://xxxxxxxxxxxx.com:2403/auth/login")!)
             let session = NSURLSession.sharedSession()
             request.HTTPMethod = "POST"
             
@@ -481,6 +481,7 @@ class LoginViewController: UIViewController, UIWebViewDelegate, UITextFieldDeleg
     
     //Mark: Social Network Buttons
     @IBAction func twitterLogin(sender: UIButton) {
+<<<<<<< HEAD
         
         if Reachability.isConnectedToNetwork() == true {
             
@@ -502,8 +503,18 @@ class LoginViewController: UIViewController, UIWebViewDelegate, UITextFieldDeleg
     @IBAction func facebookLogin(sender: UIButton) {
         if Reachability.isConnectedToNetwork() == true {
         self.callbackString = "http://my.vigasdeep.com:2403/auth/facebook/callback"
+=======
+        self.callbackString = "http://xxxxxxxxxxxx.com:2403/auth/twitter/callback"
+        self.navItem.title = "Twitter Login"
+        self.webView.loadRequest(NSURLRequest(URL: NSURL(string: "http://xxxxxxxxxxxx.com:2403/auth/twitter")!))
+        attachWebView()
+    }
+    
+    @IBAction func facebookLogin(sender: UIButton) {
+        self.callbackString = "http://xxxxxxxxxxxx.com:2403/auth/facebook/callback"
+>>>>>>> 78640aabc4d5e25626e629cd94f23c629e6961df
         self.navItem.title = "Facebook Login"
-        self.webView.loadRequest(NSURLRequest(URL: NSURL(string: "http://my.vigasdeep.com:2403/auth/facebook")!))
+        self.webView.loadRequest(NSURLRequest(URL: NSURL(string: "http://xxxxxxxxxxxx.com:2403/auth/facebook")!))
         attachWebView()
         } else {
             
@@ -517,10 +528,14 @@ class LoginViewController: UIViewController, UIWebViewDelegate, UITextFieldDeleg
     }
     
     @IBAction func googleLogin(sender: UIButton) {
+<<<<<<< HEAD
         if Reachability.isConnectedToNetwork() == true {
         self.callbackString = "http://my.vigasdeep.com:2403/auth/google/callback"
+=======
+        self.callbackString = "http://xxxxxxxxxxxx.com:2403/auth/google/callback"
+>>>>>>> 78640aabc4d5e25626e629cd94f23c629e6961df
         self.navItem.title = "Google Login"
-        self.webView.loadRequest(NSURLRequest(URL: NSURL(string: "http://my.vigasdeep.com:2403/auth/google")!))
+        self.webView.loadRequest(NSURLRequest(URL: NSURL(string: "http://xxxxxxxxxxxx.com:2403/auth/google")!))
         attachWebView()
         } else {
             
@@ -660,5 +675,15 @@ class LoginViewController: UIViewController, UIWebViewDelegate, UITextFieldDeleg
         }
         return true
     }
+<<<<<<< HEAD
 
 }
+=======
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+}
+>>>>>>> 78640aabc4d5e25626e629cd94f23c629e6961df

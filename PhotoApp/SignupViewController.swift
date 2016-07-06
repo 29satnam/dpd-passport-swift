@@ -42,7 +42,7 @@ class SignupViewController: UIViewController {
             self.presentViewController(alertController, animated: true) { }
         } else {
        
-            let request = NSMutableURLRequest(URL: NSURL(string: "http://my.vigasdeep.com:2403/users")!)
+            let request = NSMutableURLRequest(URL: NSURL(string: "http://xxxxxxxxxxxx.com:2403/users")!)
             let session = NSURLSession.sharedSession()
             request.HTTPMethod = "POST"
             

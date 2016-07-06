@@ -32,7 +32,7 @@ class HomeViewController: UIViewController {
             
             let session = NSURLSession.sharedSession()
             
-            let url = NSURL(string: "http://my.vigasdeep.com:2403/users/me")
+            let url = NSURL(string: "http://xxxxxxxxxxxx.com:2403/users/me")
             
             let request = NSMutableURLRequest(URL: url!)
             request.HTTPMethod = "GET"
