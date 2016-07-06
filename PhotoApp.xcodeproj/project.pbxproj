@@ -12,11 +12,12 @@
 		C0026C131C3EBD19008F0B44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0026C111C3EBD19008F0B44 /* LaunchScreen.storyboard */; };
 		C0026C1E1C3EBD19008F0B44 /* PhotoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0026C1D1C3EBD19008F0B44 /* PhotoAppTests.swift */; };
 		C0026C291C3EBD19008F0B44 /* PhotoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0026C281C3EBD19008F0B44 /* PhotoAppUITests.swift */; };
-		C0347A151C5F0EA000681DDB /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0347A141C5F0EA000681DDB /* WebView.xib */; };
+		C0310E4A1C7C8AC300E4CC4D /* Apple Chancery.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0310E491C7C8AC300E4CC4D /* Apple Chancery.ttf */; };
 		C03E9D0D1C4BBA2900B07323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03E9D0C1C4BBA2900B07323 /* AppDelegate.swift */; };
 		C03E9D161C4BBAC600B07323 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03E9D151C4BBAC600B07323 /* HomeViewController.swift */; };
 		C042587C1C4CAE48000A6AA8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C042587B1C4CAE48000A6AA8 /* LoginViewController.swift */; };
 		C04258851C4CD219000A6AA8 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04258841C4CD219000A6AA8 /* SignupViewController.swift */; };
+		C083E5A81C787948000C1FCE /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C083E5A71C787948000C1FCE /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,12 +62,13 @@
 		C0026C241C3EBD19008F0B44 /* PhotoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0026C281C3EBD19008F0B44 /* PhotoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppUITests.swift; sourceTree = "<group>"; };
 		C0026C2A1C3EBD19008F0B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0347A141C5F0EA000681DDB /* WebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebView.xib; sourceTree = "<group>"; };
+		C0310E491C7C8AC300E4CC4D /* Apple Chancery.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Apple Chancery.ttf"; sourceTree = "<group>"; };
 		C03E9D0C1C4BBA2900B07323 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C03E9D151C4BBAC600B07323 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C03EA5361C437EBA001DBA45 /* PhotoApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoApp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		C042587B1C4CAE48000A6AA8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C04258841C4CD219000A6AA8 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		C083E5A71C787948000C1FCE /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		C0026BFC1C3EBD19008F0B44 = {
 			isa = PBXGroup;
 			children = (
+				C0310E491C7C8AC300E4CC4D /* Apple Chancery.ttf */,
 				C0026C361C3EBD26008F0B44 /* Resources */,
 				C0026C071C3EBD19008F0B44 /* PhotoApp */,
 				C0414C291C42D3190088F7AE /* Supporting */,
@@ -168,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				C0026C0C1C3EBD19008F0B44 /* Main.storyboard */,
-				C0347A141C5F0EA000681DDB /* WebView.xib */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -179,6 +181,7 @@
 				C03E9D151C4BBAC600B07323 /* HomeViewController.swift */,
 				C04258841C4CD219000A6AA8 /* SignupViewController.swift */,
 				C042587B1C4CAE48000A6AA8 /* LoginViewController.swift */,
+				C083E5A71C787948000C1FCE /* Reachability.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				TargetAttributes = {
 					C0026C041C3EBD19008F0B44 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 25DZLP69MU;
 					};
 					C0026C181C3EBD19008F0B44 = {
 						CreatedOnToolsVersion = 7.2;
@@ -289,8 +293,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0310E4A1C7C8AC300E4CC4D /* Apple Chancery.ttf in Resources */,
 				C0026C131C3EBD19008F0B44 /* LaunchScreen.storyboard in Resources */,
-				C0347A151C5F0EA000681DDB /* WebView.xib in Resources */,
 				C0026C101C3EBD19008F0B44 /* Assets.xcassets in Resources */,
 				C0026C0E1C3EBD19008F0B44 /* Main.storyboard in Resources */,
 			);
@@ -333,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C083E5A81C787948000C1FCE /* Reachability.swift in Sources */,
 				C042587C1C4CAE48000A6AA8 /* LoginViewController.swift in Sources */,
 				C03E9D161C4BBAC600B07323 /* HomeViewController.swift in Sources */,
 				C04258851C4CD219000A6AA8 /* SignupViewController.swift in Sources */,
@@ -476,13 +481,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = "~/Documents/FacebookSDK/";
 				"HEADER_SEARCH_PATHS[arch=*]" = "";
 				INFOPLIST_FILE = PhotoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.silverseahog.PhotoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PhotoApp-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -492,12 +501,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = "~/Documents/FacebookSDK/";
 				INFOPLIST_FILE = PhotoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.silverseahog.PhotoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PhotoApp-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 
 class HomeViewController: UIViewController {
     
@@ -15,7 +14,6 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
     }
     
@@ -30,7 +28,6 @@ class HomeViewController: UIViewController {
         } else {
             self.usernameLabel.text = prefs.valueForKey("USERNAME") as? String
             
-            
             let token = prefs.valueForKey("SESSIONID") as? String
             
             let session = NSURLSession.sharedSession()
@@ -40,7 +37,6 @@ class HomeViewController: UIViewController {
             let request = NSMutableURLRequest(URL: url!)
             request.HTTPMethod = "GET"
             request.setValue( "Bearer \(token!)", forHTTPHeaderField: "Authorization")
-            
             
             
             let task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
